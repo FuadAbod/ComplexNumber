@@ -1,0 +1,12 @@
+class complex_number:
+
+    def __init__(self, real, imaginary):
+        self.real = real
+        self.imaginary = imaginary 
+
+    def add(self, real, imaginary):
+        self.other = complex_number(real, imaginary)
+        return self.real+ self.other.real + (self.other.imaginary+self.imaginary)*1j
+
+ComplexNumber=complex_number(1,2).add(1,2)
+print(ComplexNumber)
